@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CV / Resume" />
+    <title>CV | Your Name</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: [
+                "ui-sans-serif",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "Roboto",
+                "Helvetica",
+                "Arial",
+                "Noto Sans",
+                "Liberation Sans",
+                "sans-serif",
+              ],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      @media print {
+        .no-print {
+          display: none !important;
+        }
+        a[href]:after {
+          content: "";
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-slate-50 text-slate-900">
+    <header class="sticky top-0 z-30 border-b border-slate-200 bg-white/80 backdrop-blur no-print">
+      <div class="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-3">
+        <a href="#top" class="font-semibold tracking-tight">Your Name</a>
+        <nav class="hidden items-center gap-5 text-sm text-slate-600 sm:flex">
+          <a class="hover:text-slate-900" href="#experience">Experience</a>
+          <a class="hover:text-slate-900" href="#projects">Projects</a>
+          <a class="hover:text-slate-900" href="#skills">Skills</a>
+          <a class="hover:text-slate-900" href="#education">Education</a>
+          <a class="hover:text-slate-900" href="#contact">Contact</a>
+        </nav>
+        <div class="flex items-center gap-2">
+          <a
+            class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm font-medium text-slate-700 shadow-sm hover:bg-slate-50"
+            href="#contact"
+            >Hire me</a
+          >
+          <button
+            type="button"
+            onclick="window.print()"
+            class="rounded-lg bg-slate-900 px-3 py-1.5 text-sm font-medium text-white shadow-sm hover:bg-slate-800"
+          >
+            Print / Save PDF
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top" class="mx-auto max-w-5xl px-4 py-10">
+      <section class="grid gap-6 md:grid-cols-3 md:items-start">
+        <div class="md:col-span-2">
+          <p class="text-sm font-semibold text-slate-600">CV / Resume</p>
+          <h1 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">Your Name</h1>
+          <p class="mt-3 text-base text-slate-700">
+            Your role / headline (e.g., Full‑Stack Developer) with 1–2 lines about your strengths and what you build.
+          </p>
+
+          <div class="mt-5 flex flex-wrap gap-2 text-sm">
+            <span class="rounded-full bg-slate-900 px-3 py-1 text-white">Key skill 1</span>
+            <span class="rounded-full bg-slate-900 px-3 py-1 text-white">Key skill 2</span>
+            <span class="rounded-full bg-slate-900 px-3 py-1 text-white">Key skill 3</span>
+            <span class="rounded-full bg-slate-900 px-3 py-1 text-white">Key skill 4</span>
+          </div>
+
+          <div class="mt-6 flex flex-wrap gap-3 text-sm">
+            <a
+              class="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-2 font-medium text-slate-700 shadow-sm hover:bg-slate-50"
+              href="https://github.com/your-username"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+            <a
+              class="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-2 font-medium text-slate-700 shadow-sm hover:bg-slate-50"
+              href="https://www.linkedin.com/in/your-handle/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+            <a
+              class="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-2 font-medium text-slate-700 shadow-sm hover:bg-slate-50"
+              href="#contact"
+            >
+              Contact
+            </a>
+          </div>
+        </div>
+
+        <aside class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <h2 class="text-sm font-semibold text-slate-600">At a glance</h2>
+          <dl class="mt-4 space-y-3 text-sm">
+            <div class="flex justify-between gap-3">
+              <dt class="text-slate-600">Location</dt>
+              <dd class="font-medium text-slate-900">City, Country</dd>
+            </div>
+            <div class="flex justify-between gap-3">
+              <dt class="text-slate-600">Email</dt>
+              <dd class="font-medium text-slate-900">
+                <a class="underline decoration-slate-300 underline-offset-4 hover:decoration-slate-500" href="mailto:you@email.com"
+                  >you@email.com</a
+                >
+              </dd>
+            </div>
+            <div class="flex justify-between gap-3">
+              <dt class="text-slate-600">Phone</dt>
+              <dd class="font-medium text-slate-900">
+                <a class="underline decoration-slate-300 underline-offset-4 hover:decoration-slate-500" href="tel:+0000000000"
+                  >+00 000 000 000</a
+                >
+              </dd>
+            </div>
+            <div class="flex justify-between gap-3">
+              <dt class="text-slate-600">Website</dt>
+              <dd class="font-medium text-slate-900">
+                <a
+                  class="underline decoration-slate-300 underline-offset-4 hover:decoration-slate-500"
+                  href="https://your-domain.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  >your-domain.com</a
+                >
+              </dd>
+            </div>
+          </dl>
+
+          <div class="mt-5 rounded-xl bg-slate-50 p-4 text-xs text-slate-600">
+            Tip: replace all placeholder text with your real details. Then commit and push to GitHub Pages.
+          </div>
+        </aside>
+      </section>
+
+      <section id="experience" class="mt-12">
+        <div class="flex items-end justify-between gap-4">
+          <h2 class="text-xl font-bold tracking-tight">Experience</h2>
+          <p class="text-sm text-slate-600">Most recent first</p>
+        </div>
+
+        <div class="mt-4 space-y-4">
+          <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="font-semibold">Job Title</h3>
+                <p class="text-sm text-slate-600">Company · City</p>
+              </div>
+              <p class="text-sm font-medium text-slate-700">2024 — Present</p>
+            </div>
+            <ul class="mt-3 list-disc space-y-1 pl-5 text-sm text-slate-700">
+              <li>Impact bullet with numbers (e.g., improved performance by 30%).</li>
+              <li>What you built / owned (e.g., led feature delivery end-to-end).</li>
+              <li>Tech stack (e.g., React, Node.js, PostgreSQL, AWS).</li>
+            </ul>
+          </article>
+
+          <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="font-semibold">Job Title</h3>
+                <p class="text-sm text-slate-600">Company · City</p>
+              </div>
+              <p class="text-sm font-medium text-slate-700">2022 — 2024</p>
+            </div>
+            <ul class="mt-3 list-disc space-y-1 pl-5 text-sm text-slate-700">
+              <li>Impact bullet with numbers.</li>
+              <li>Scope and responsibilities.</li>
+              <li>Notable collaboration or leadership point.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="mt-12">
+        <div class="flex items-end justify-between gap-4">
+          <h2 class="text-xl font-bold tracking-tight">Projects</h2>
+          <p class="text-sm text-slate-600">Selected work</p>
+        </div>
+
+        <div class="mt-4 grid gap-4 md:grid-cols-2">
+          <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <div class="flex items-start justify-between gap-3">
+              <h3 class="font-semibold">Project Name</h3>
+              <a
+                class="text-sm font-medium text-slate-700 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-500"
+                href="https://github.com/your-username/your-project"
+                target="_blank"
+                rel="noreferrer"
+                >Link</a
+              >
+            </div>
+            <p class="mt-2 text-sm text-slate-700">
+              One-line description of what the project does and why it matters.
+            </p>
+            <div class="mt-3 flex flex-wrap gap-2 text-xs">
+              <span class="rounded-full bg-slate-100 px-2 py-1 text-slate-700">Tech 1</span>
+              <span class="rounded-full bg-slate-100 px-2 py-1 text-slate-700">Tech 2</span>
+              <span class="rounded-full bg-slate-100 px-2 py-1 text-slate-700">Tech 3</span>
+            </div>
+          </article>
+
+          <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <div class="flex items-start justify-between gap-3">
+              <h3 class="font-semibold">Project Name</h3>
+              <a
+                class="text-sm font-medium text-slate-700 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-500"
+                href="https://your-demo-link.com"
+                target="_blank"
+                rel="noreferrer"
+                >Demo</a
+              >
+            </div>
+            <p class="mt-2 text-sm text-slate-700">
+              Short description + your key contribution (performance, UX, reliability, etc.).
+            </p>
+            <div class="mt-3 flex flex-wrap gap-2 text-xs">
+              <span class="rounded-full bg-slate-100 px-2 py-1 text-slate-700">Tech 1</span>
+              <span class="rounded-full bg-slate-100 px-2 py-1 text-slate-700">Tech 2</span>
+              <span class="rounded-full bg-slate-100 px-2 py-1 text-slate-700">Tech 3</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="mt-12">
+        <h2 class="text-xl font-bold tracking-tight">Skills</h2>
+
+        <div class="mt-4 grid gap-4 md:grid-cols-3">
+          <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <h3 class="text-sm font-semibold text-slate-600">Languages</h3>
+            <p class="mt-2 text-sm text-slate-700">JavaScript, TypeScript, Python, Java</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <h3 class="text-sm font-semibold text-slate-600">Frameworks</h3>
+            <p class="mt-2 text-sm text-slate-700">React, Node.js, Express, Next.js</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <h3 class="text-sm font-semibold text-slate-600">Tools</h3>
+            <p class="mt-2 text-sm text-slate-700">Git, Docker, AWS, CI/CD</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="mt-12">
+        <h2 class="text-xl font-bold tracking-tight">Education</h2>
+
+        <div class="mt-4 space-y-4">
+          <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="font-semibold">Degree / Program</h3>
+                <p class="text-sm text-slate-600">University / Institute</p>
+              </div>
+              <p class="text-sm font-medium text-slate-700">2019 — 2023</p>
+            </div>
+            <p class="mt-3 text-sm text-slate-700">Relevant coursework / awards / GPA (optional).</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="mt-12">
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h2 class="text-xl font-bold tracking-tight">Contact</h2>
+          <p class="mt-2 text-sm text-slate-700">
+            The fastest way to reach me is via email.
+          </p>
+
+          <div class="mt-4 grid gap-3 sm:grid-cols-2">
+            <a
+              class="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-800 shadow-sm hover:bg-slate-50"
+              href="mailto:you@email.com"
+              >you@email.com</a
+            >
+            <a
+              class="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-800 shadow-sm hover:bg-slate-50"
+              href="https://www.linkedin.com/in/your-handle/"
+              target="_blank"
+              rel="noreferrer"
+              >linkedin.com/in/your-handle</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <footer class="mt-10 pb-6 text-center text-xs text-slate-500">
+        <p>© <span id="year"></span> Your Name. Built with HTML + Tailwind CSS.</p>
+      </footer>
+    </main>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
